@@ -87,6 +87,7 @@ const translations = {
       viewCase: "Voir l'étude de cas",
       hideCase: 'Réduire',
       liveLink: 'Voir en ligne',
+      sourceCode: 'Code source',
       techUsed: 'Technologies utilisées',
       challenge: 'Le défi',
       solution: 'La solution',
@@ -98,7 +99,8 @@ const translations = {
           featured: true,
           tagline: 'Plateforme de gestion agro-pastorale',
           tech: ['Django 5', 'PostgreSQL', 'HTMX', 'CSS', 'Python'],
-          link: 'https://fermeapp-backend.onrender.com/accounts/login/?next=/dashboard/',
+          link: 'https://fermeapp.vercel.app',
+          repo: 'https://github.com/Walid-Yanni/Projet_memoire_git_depot',
           challenge:
             "Les fermes agro-pastorales du Sahel manquent d'outils numériques adaptés pour suivre leurs lots, traitements et comptages, freinant leur productivité et leur professionnalisation.",
           solution:
@@ -234,6 +236,7 @@ const translations = {
       viewCase: 'View case study',
       hideCase: 'Collapse',
       liveLink: 'View live',
+      sourceCode: 'Source code',
       techUsed: 'Technologies used',
       challenge: 'The Challenge',
       solution: 'The Solution',
@@ -245,7 +248,8 @@ const translations = {
           featured: true,
           tagline: 'Agro-pastoral farm management platform',
           tech: ['Django 5', 'PostgreSQL', 'HTMX', 'CSS', 'Python'],
-          link: 'https://fermeapp-backend.onrender.com/accounts/login/?next=/dashboard/',
+          link: 'https://fermeapp.vercel.app',
+          repo: 'https://github.com/Walid-Yanni/Projet_memoire_git_depot',
           challenge:
             'Agro-pastoral farms in the Sahel lack suitable digital tools to track their lots, treatments and headcounts, hindering productivity and professionalization.',
           solution:
@@ -404,7 +408,8 @@ export default function Portfolio() {
               {t.hero.cta1}
             </button>
             <a
-              href="https://drive.google.com/uc?export=download&id=14rhbUWdAr8SBmhtxf4X4qTDGmtGpV-al"
+              href="/CV_Walid_Yanni.pdf"
+              download="CV_Walid_Yanni.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-7 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/10 font-bold transition"
@@ -566,6 +571,7 @@ export default function Portfolio() {
                         <h3 className="text-2xl font-bold">{p.title}</h3>
                         <p className="text-slate-400 mt-1">{p.tagline}</p>
                       </div>
+                      <div className="flex flex-col items-end gap-2">
                       {p.link && (
                         <a
                           href={p.link}
@@ -576,6 +582,17 @@ export default function Portfolio() {
                           {t.projects.liveLink} <ExternalLink size={14} />
                         </a>
                       )}
+                      {p.repo && (
+                        <a
+                          href={p.repo}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-1.5 text-sm font-semibold text-slate-300 hover:text-white transition whitespace-nowrap"
+                        >
+                          {t.projects.sourceCode} <Github size={14} />
+                        </a>
+                      )}
+                      </div>
                     </div>
 
                     <div className="flex flex-wrap gap-2 mb-4">
