@@ -123,6 +123,21 @@ const translations = {
             "Un prototype IoT fonctionnel démontrant la faisabilité d'une irrigation intelligente et économe en eau, avec un fort potentiel d'application dans le secteur agricole local.",
         },
         {
+          key: 'assistantimpact',
+          title: "Assistant d'évaluations d'impact",
+          featured: true,
+          tagline: "Recherche de passages dans des évaluations d'impact sur la pauvreté",
+          tech: ['Python', 'scikit-learn', 'TF-IDF', 'pypdf', 'pytest'],
+          link: '',
+          repo: 'https://github.com/Walid-Yanni/assistant-evaluations-impact',
+          challenge:
+            "Les évaluations d'impact sur la pauvreté sont longues et dispersées. Retrouver rapidement le passage qui répond à une question, avec sa source, demande un temps considérable aux équipes de recherche et de décision.",
+          solution:
+            "Un assistant en Python qui lit des documents PDF, HTML ou texte, les découpe en passages, les représente avec la méthode TF-IDF (scikit-learn) et renvoie les passages les plus proches d'une question, avec le fichier et la page d'origine. Il indique quand il ne trouve rien de pertinent plutôt que d'inventer une réponse. Le code est testé automatiquement et construit avec l'aide de Claude, que j'ai relu et vérifié.",
+          result:
+            "Un projet d'apprentissage publié sur GitHub, validé par 6 tests automatiques et essayé sur un vrai rapport (programme d'inclusion économique au Niger). Limite identifiée : la recherche repose sur les mots et ne gère pas les synonymes. Prochaine étape : mesurer la qualité des résultats et tester des représentations plus avancées.",
+        },
+        {
           key: 'flowos',
           title: 'FlowOS',
           featured: false,
@@ -270,6 +285,21 @@ const translations = {
             'Designed an automatic watering system based on an ESP32 microcontroller, programmed in Python via the Arduino IDE. The system collects moisture data and triggers irrigation autonomously based on defined thresholds, built during the Epitech Innovation Hub program.',
           result:
             'A functional IoT prototype demonstrating the feasibility of smart, water-efficient irrigation, with strong potential for local agricultural application.',
+        },
+        {
+          key: 'assistantimpact',
+          title: 'Impact Evaluation Assistant',
+          featured: true,
+          tagline: 'Passage search across poverty impact evaluations',
+          tech: ['Python', 'scikit-learn', 'TF-IDF', 'pypdf', 'pytest'],
+          link: '',
+          repo: 'https://github.com/Walid-Yanni/assistant-evaluations-impact',
+          challenge:
+            'Poverty impact evaluations are long and scattered. Quickly finding the passage that answers a question, with its source, takes research and decision teams a lot of time.',
+          solution:
+            'A Python assistant that reads PDF, HTML or text documents, splits them into passages, represents them with TF-IDF (scikit-learn) and returns the passages closest to a question, with the original file and page. It says so when nothing relevant is found instead of making up an answer. The code is automatically tested and was built with the help of Claude, which I reviewed and verified.',
+          result:
+            'A learning project published on GitHub, validated by 6 automated tests and tried on a real report (an economic inclusion programme in Niger). Known limit: the search is word-based and does not handle synonyms. Next step: measure result quality and test more advanced representations.',
         },
         {
           key: 'flowos',
