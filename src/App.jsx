@@ -20,24 +20,73 @@ const translations = {
   fr: {
     nav: {
       about: 'À propos',
+      career: 'Parcours',
       skills: 'Compétences',
       projects: 'Projets',
       contact: 'Contact',
     },
     hero: {
-      title: 'Développeur Web',
-      subtitle: '& Passionné de Réseaux',
-      desc: "Jeune diplômé en Réseaux et Génie Logiciel, je conçois des applications web fullstack et j'explore l'infrastructure réseau et l'IoT. Basé à Cotonou, Bénin.",
+      title: 'Développeur Logiciel',
+      subtitle: 'Python · Fullstack · Réseaux',
+      available: 'Disponible pour un stage à temps plein',
+      photoAlt: 'Portrait de Walid Hamadou Yanni',
+      desc: "Jeune diplômé en Réseaux et Génie Logiciel. Je conçois des applications web complètes (Django, Next.js) qui répondent à des besoins concrets, et je me forme à l'intelligence artificielle. Basé à Cotonou, Bénin.",
       cta1: 'Voir mes projets',
       cta2: 'Télécharger mon CV',
     },
     about: {
       title: 'À propos de moi',
-      text: "Jeune dynamique passionné par le digital et l'engagement communautaire, je débute mon parcours professionnel dans le développement web tout en cultivant une double expertise en réseaux informatiques. J'aime transformer des idées en produits concrets, qu'il s'agisse d'une application de gestion agro-pastorale ou d'un système d'arrosage intelligent. Curieux et autonome, je m'investis pleinement dans chaque projet, du code à la mise en production.",
+      text: "Diplômé en Réseaux et Génie Logiciel (PIGIER Bénin, 2026), je développe des applications web complètes et je m'intéresse aux outils numériques utiles aux réalités locales. J'ai conçu FermeApp, une plateforme de gestion agro-pastorale mise en ligne avec une démo publique, puis développé FlowOS et un système d'arrosage IoT pendant mon stage à Epitech Hub d'Innovations. J'ai aussi mené de la collecte de données de terrain à Maradi, au Niger. Je cherche un stage pour progresser en équipe, avec des revues de code et des projets réels.",
       stats: [
-        { label: 'Projets réalisés', value: '5+' },
-        { label: 'Technologies maîtrisées', value: '15+' },
-        { label: 'Langues parlées', value: '4' },
+        { label: 'Projets documentés', value: '5' },
+        { label: 'Application en ligne', value: '1' },
+        { label: 'Langues pratiquées', value: '4' },
+      ],
+    },
+    career: {
+      title: 'Parcours',
+      subtitle: 'Expérience et formation',
+      experience: 'Expérience',
+      education: 'Formation',
+      work: [
+        {
+          period: 'Janv. – Avr. 2026',
+          role: 'Stage académique',
+          org: "Epitech Hub d'Innovations, Cotonou",
+          points: [
+            "Vision 2060 : comptes-rendus et suivi de réunions pour près de 20 projets innovants d'élèves.",
+            "Conception de FlowOS (full-stack, Next.js) et d'un système d'arrosage IoT (Python, ESP32).",
+            'Travail en équipe multiculturelle et vulgarisation de concepts techniques.',
+          ],
+        },
+        {
+          period: 'Mars 2025 – Actuellement',
+          role: 'Gestionnaire de location & Community Manager',
+          org: 'Airbnb, Cotonou',
+          points: [
+            'Gestion de plusieurs appartements : annonces, relation clients, suivi des tarifs.',
+          ],
+        },
+        {
+          period: 'Sept. 2022',
+          role: 'Agent recenseur',
+          org: 'Santé Publique, région de Maradi (Niger)',
+          points: [
+            'Collecte de données de terrain auprès des communautés ; formulaires créés sur ODK et données gérées en ligne.',
+          ],
+        },
+      ],
+      school: [
+        {
+          period: 'Oct. 2023 – Juin 2026',
+          role: 'Licence en Réseaux et Génie Logiciel',
+          org: 'PIGIER BENIN, Cotonou',
+        },
+        {
+          period: '2022 – 2023',
+          role: 'Baccalauréat Série D',
+          org: "CSP L'Intégral du Savoir, Niamey (Niger)",
+        },
       ],
     },
     skills: {
@@ -46,16 +95,18 @@ const translations = {
       dev: {
         title: 'Développement Web',
         items: [
+          'Python',
+          'Django 5',
+          'PostgreSQL',
+          'API REST',
           'Next.js',
           'React',
-          'Django 5',
           'Node.js',
           'Express.js',
-          'PostgreSQL',
-          'HTMX',
-          'PHP',
           'Prisma',
-          'Symfony',
+          'HTMX',
+          'PHP (notions)',
+          'Symfony (notions)',
         ],
       },
       network: {
@@ -98,20 +149,27 @@ const translations = {
           title: 'FermeApp',
           featured: true,
           tagline: 'Plateforme de gestion agro-pastorale',
-          tech: ['Django 5', 'PostgreSQL', 'HTMX', 'CSS', 'Python'],
+          tech: ['Python', 'Django 5', 'PostgreSQL', 'HTMX', 'Chart.js', 'Supabase', 'Vercel'],
           link: 'https://fermeapp.vercel.app',
           repo: 'https://github.com/Walid-Yanni/Projet_memoire_git_depot',
+          cover: '/img/fermeapp-tableau-de-bord.webp',
+          coverAlt: 'Tableau de bord de FermeApp : recettes et dépenses, répartition du cheptel, alertes',
+          gallery: [
+            { src: '/img/fermeapp-accueil.webp', alt: "Page d'accueil de FermeApp", caption: "Page d'accueil et démo publique" },
+            { src: '/img/fermeapp-lots.webp', alt: 'Liste des lots de pondeuses', caption: "Suivi des lots d'élevage" },
+            { src: '/img/fermeapp-nouveau-lot.webp', alt: "Formulaire de création d'un lot", caption: 'Saisie avec validations' },
+          ],
           challenge:
             "Les fermes agro-pastorales du Sahel manquent d'outils numériques adaptés pour suivre leurs lots, traitements et comptages, freinant leur productivité et leur professionnalisation.",
           solution:
-            "Développement d'une plateforme web complète avec un backend Django 5 robuste, une base de données PostgreSQL structurée, et une interface HTMX offrant des rechargements partiels sans complexité d'une SPA. Gestion des lots, traitements et comptages avec validations métier alignées sur les besoins réels du terrain.",
+            "Développement d'une plateforme web complète avec un backend Django 5 robuste, une base de données PostgreSQL structurée, et une interface HTMX offrant des rechargements partiels sans complexité d'une SPA. Gestion des lots, traitements et comptages avec validations métier alignées sur les besoins réels du terrain. Trois rôles (administrateur, employé, visiteur en lecture seule) et un mode démo public.",
           result:
-            'Une solution fonctionnelle et déployée en production, directement utilisable par les exploitants pour digitaliser leur suivi quotidien et améliorer leur prise de décision.',
+            "Une plateforme fonctionnelle, mise en ligne avec une démo publique en lecture seule (données fictives), testée lors d'une simulation sur le terrain et présentée lors de ma soutenance de fin d'études en mai 2026.",
         },
         {
           key: 'smartirrigation',
           title: 'Smart Irrigation',
-          featured: true,
+          featured: false,
           tagline: "Système d'arrosage automatique intelligent (IoT)",
           tech: ['Python', 'ESP32', 'Arduino IDE', 'Capteurs IoT'],
           link: '',
@@ -130,6 +188,9 @@ const translations = {
           tech: ['Python', 'scikit-learn', 'TF-IDF', 'pypdf', 'pytest'],
           link: '',
           repo: 'https://github.com/Walid-Yanni/assistant-evaluations-impact',
+          cover: '/img/assistant-schema-fr.svg',
+          coverAlt: "Schéma de l'assistant : documents, découpage, TF-IDF, comparaison, passages classés avec la source",
+          coverContain: true,
           challenge:
             "Les évaluations d'impact sur la pauvreté sont longues et dispersées. Retrouver rapidement le passage qui répond à une question, avec sa source, demande un temps considérable aux équipes de recherche et de décision.",
           solution:
@@ -173,7 +234,8 @@ const translations = {
       name: 'Nom complet',
       email: 'Email',
       message: 'Votre message',
-      send: 'Envoyer le message',
+      send: 'Écrire par e-mail',
+      note: 'Ce formulaire ouvre votre application de messagerie.',
       sent: 'Message prêt à être envoyé via votre messagerie !',
       info: 'Informations',
     },
@@ -184,24 +246,73 @@ const translations = {
   en: {
     nav: {
       about: 'About',
+      career: 'Background',
       skills: 'Skills',
       projects: 'Projects',
       contact: 'Contact',
     },
     hero: {
-      title: 'Web Developer',
-      subtitle: '& Networking Enthusiast',
-      desc: 'Recent graduate in Networks and Software Engineering, I build fullstack web applications and explore network infrastructure and IoT. Based in Cotonou, Benin.',
+      title: 'Software Developer',
+      subtitle: 'Python · Fullstack · Networks',
+      available: 'Available for a full-time internship',
+      photoAlt: 'Portrait of Walid Hamadou Yanni',
+      desc: 'Recent graduate in Networks and Software Engineering. I build complete web applications (Django, Next.js) that answer real needs, and I am training in artificial intelligence. Based in Cotonou, Benin.',
       cta1: 'View my projects',
       cta2: 'Download my CV',
     },
     about: {
       title: 'About Me',
-      text: "A dynamic young professional passionate about digital technology and community engagement, I'm starting my career in web development while cultivating dual expertise in computer networking. I love turning ideas into real products, whether it's a farm management app or a smart irrigation system. Curious and self-driven, I fully invest myself in every project, from code to production.",
+      text: "A graduate in Networks and Software Engineering (PIGIER Benin, 2026), I build complete web applications and care about digital tools that fit local realities. I designed FermeApp, an agro-pastoral management platform put online with a public demo, then built FlowOS and an IoT irrigation system during my internship at Epitech Innovation Hub. I also carried out field data collection in Maradi, Niger. I am looking for an internship to grow within a team, with code reviews and real projects.",
       stats: [
-        { label: 'Projects completed', value: '5+' },
-        { label: 'Technologies mastered', value: '15+' },
-        { label: 'Languages spoken', value: '4' },
+        { label: 'Documented projects', value: '5' },
+        { label: 'Live application', value: '1' },
+        { label: 'Languages used', value: '4' },
+      ],
+    },
+    career: {
+      title: 'Background',
+      subtitle: 'Experience and education',
+      experience: 'Experience',
+      education: 'Education',
+      work: [
+        {
+          period: 'Jan. – Apr. 2026',
+          role: 'Academic internship',
+          org: 'Epitech Innovation Hub, Cotonou',
+          points: [
+            'Vision 2060: meeting minutes and follow-up for nearly 20 student innovation projects.',
+            'Built FlowOS (fullstack, Next.js) and an IoT irrigation system (Python, ESP32).',
+            'Worked in a multicultural team and explained technical concepts to non-technical audiences.',
+          ],
+        },
+        {
+          period: 'Mar. 2025 – Present',
+          role: 'Rental Manager & Community Manager',
+          org: 'Airbnb, Cotonou',
+          points: [
+            'Managing several apartments: listings, guest relations, price monitoring.',
+          ],
+        },
+        {
+          period: 'Sept. 2022',
+          role: 'Census agent',
+          org: 'Public Health, Maradi region (Niger)',
+          points: [
+            'Field data collection in communities; forms built on ODK and data managed online.',
+          ],
+        },
+      ],
+      school: [
+        {
+          period: 'Oct. 2023 – Jun. 2026',
+          role: "Bachelor's degree in Networks and Software Engineering",
+          org: 'PIGIER BENIN, Cotonou',
+        },
+        {
+          period: '2022 – 2023',
+          role: 'Baccalauréat, Série D (science stream)',
+          org: "CSP L'Intégral du Savoir, Niamey (Niger)",
+        },
       ],
     },
     skills: {
@@ -210,16 +321,18 @@ const translations = {
       dev: {
         title: 'Web Development',
         items: [
+          'Python',
+          'Django 5',
+          'PostgreSQL',
+          'API REST',
           'Next.js',
           'React',
-          'Django 5',
           'Node.js',
           'Express.js',
-          'PostgreSQL',
-          'HTMX',
-          'PHP',
           'Prisma',
-          'Symfony',
+          'HTMX',
+          'PHP (notions)',
+          'Symfony (notions)',
         ],
       },
       network: {
@@ -262,20 +375,27 @@ const translations = {
           title: 'FermeApp',
           featured: true,
           tagline: 'Agro-pastoral farm management platform',
-          tech: ['Django 5', 'PostgreSQL', 'HTMX', 'CSS', 'Python'],
+          tech: ['Python', 'Django 5', 'PostgreSQL', 'HTMX', 'Chart.js', 'Supabase', 'Vercel'],
           link: 'https://fermeapp.vercel.app',
           repo: 'https://github.com/Walid-Yanni/Projet_memoire_git_depot',
+          cover: '/img/fermeapp-tableau-de-bord.webp',
+          coverAlt: 'FermeApp dashboard: revenue and expenses, livestock breakdown, alerts',
+          gallery: [
+            { src: '/img/fermeapp-accueil.webp', alt: 'FermeApp home page', caption: 'Home page and public demo' },
+            { src: '/img/fermeapp-lots.webp', alt: 'Laying hen batches list', caption: 'Livestock batch tracking' },
+            { src: '/img/fermeapp-nouveau-lot.webp', alt: 'New batch creation form', caption: 'Data entry with validations' },
+          ],
           challenge:
             'Agro-pastoral farms in the Sahel lack suitable digital tools to track their lots, treatments and headcounts, hindering productivity and professionalization.',
           solution:
-            'Built a complete web platform with a robust Django 5 backend, a structured PostgreSQL database, and an HTMX interface offering partial page reloads without the complexity of a SPA. Lot, treatment and headcount management with business validations aligned with real field needs.',
+            'Built a complete web platform with a robust Django 5 backend, a structured PostgreSQL database, and an HTMX interface offering partial page reloads without the complexity of a SPA. Lot, treatment and headcount management with business validations aligned with real field needs. Three roles (administrator, employee, read-only visitor) and a public demo mode.',
           result:
-            'A functional, production-deployed solution directly usable by farmers to digitize their daily tracking and improve decision-making.',
+            'A working platform, put online with a read-only public demo (fictional data), tested in a field simulation and presented at my final-year defence in May 2026.',
         },
         {
           key: 'smartirrigation',
           title: 'Smart Irrigation',
-          featured: true,
+          featured: false,
           tagline: 'Smart automatic watering system (IoT)',
           tech: ['Python', 'ESP32', 'Arduino IDE', 'IoT Sensors'],
           link: '',
@@ -294,6 +414,9 @@ const translations = {
           tech: ['Python', 'scikit-learn', 'TF-IDF', 'pypdf', 'pytest'],
           link: '',
           repo: 'https://github.com/Walid-Yanni/assistant-evaluations-impact',
+          cover: '/img/assistant-schema-en.svg',
+          coverAlt: 'Assistant diagram: documents, splitting, TF-IDF, comparison, ranked passages with their source',
+          coverContain: true,
           challenge:
             'Poverty impact evaluations are long and scattered. Quickly finding the passage that answers a question, with its source, takes research and decision teams a lot of time.',
           solution:
@@ -337,7 +460,8 @@ const translations = {
       name: 'Full name',
       email: 'Email',
       message: 'Your message',
-      send: 'Send message',
+      send: 'Write by email',
+      note: 'This form opens your email app.',
       sent: 'Message ready to send via your mail client!',
       info: 'Info',
     },
@@ -386,6 +510,12 @@ export default function Portfolio() {
               {t.nav.about}
             </button>
             <button
+              onClick={() => scrollTo('career')}
+              className="hover:text-cyan-400 transition"
+            >
+              {t.nav.career}
+            </button>
+            <button
               onClick={() => scrollTo('skills')}
               className="hover:text-cyan-400 transition"
             >
@@ -417,15 +547,29 @@ export default function Portfolio() {
       {/* Hero */}
       <section className="relative pt-40 pb-24 px-6">
         <div className="max-w-6xl mx-auto text-center">
-          <div className="inline-block mb-6 px-4 py-1.5 rounded-full bg-gradient-to-r from-fuchsia-500/20 to-cyan-500/20 border border-white/10 text-sm text-cyan-300 font-medium">
-            Cotonou, Bénin
+          <img
+            src="/img/profile.jpg"
+            alt={t.hero.photoAlt}
+            width="144"
+            height="144"
+            className="mx-auto mb-6 w-36 h-36 rounded-full object-cover ring-4 ring-fuchsia-500/40 shadow-xl shadow-fuchsia-500/20"
+          />
+          <div className="flex flex-wrap items-center justify-center gap-3 mb-6">
+            <span className="px-4 py-1.5 rounded-full bg-gradient-to-r from-fuchsia-500/20 to-cyan-500/20 border border-white/10 text-sm text-cyan-300 font-medium">
+              Cotonou, Bénin
+            </span>
+            <span className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-400/30 text-sm text-emerald-300 font-medium">
+              <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
+              {t.hero.available}
+            </span>
           </div>
-          <h1 className="text-5xl md:text-7xl font-black mb-4 leading-tight">
+          <h1 className="text-4xl md:text-7xl font-black mb-4 leading-tight">
             <span className="bg-gradient-to-r from-fuchsia-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
               {t.hero.title}
             </span>
-            <br />
-            <span className="text-white">{t.hero.subtitle}</span>
+            <span className="block mt-3 text-2xl md:text-4xl font-bold text-slate-200">
+              {t.hero.subtitle}
+            </span>
           </h1>
           <p className="max-w-2xl mx-auto text-slate-400 text-lg mb-10">
             {t.hero.desc}
@@ -501,6 +645,68 @@ export default function Portfolio() {
                 <div className="text-slate-400 text-sm mt-1">{s.label}</div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Career */}
+      <section
+        id="career"
+        className="relative py-24 px-6 border-t border-white/5"
+      >
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-14">
+            <h2 className="text-3xl md:text-4xl font-bold mb-2">
+              <span className="bg-gradient-to-r from-fuchsia-400 to-cyan-400 bg-clip-text text-transparent">
+                {t.career.title}
+              </span>
+            </h2>
+            <p className="text-slate-400">{t.career.subtitle}</p>
+          </div>
+          <div className="grid md:grid-cols-5 gap-10">
+            <div className="md:col-span-3">
+              <h3 className="text-sm font-bold text-fuchsia-400 uppercase tracking-wide mb-5">
+                {t.career.experience}
+              </h3>
+              <div className="space-y-5 border-l border-white/10 pl-6">
+                {t.career.work.map((w, i) => (
+                  <div
+                    key={i}
+                    className="p-5 rounded-2xl bg-white/5 border border-white/10"
+                  >
+                    <div className="text-xs font-semibold text-cyan-400 mb-1">
+                      {w.period}
+                    </div>
+                    <div className="font-bold">{w.role}</div>
+                    <div className="text-slate-400 text-sm mb-2">{w.org}</div>
+                    <ul className="list-disc pl-5 space-y-1 text-sm text-slate-300">
+                      {w.points.map((pt, j) => (
+                        <li key={j}>{pt}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="md:col-span-2">
+              <h3 className="text-sm font-bold text-cyan-400 uppercase tracking-wide mb-5">
+                {t.career.education}
+              </h3>
+              <div className="space-y-5 border-l border-white/10 pl-6">
+                {t.career.school.map((e, i) => (
+                  <div
+                    key={i}
+                    className="p-5 rounded-2xl bg-white/5 border border-white/10"
+                  >
+                    <div className="text-xs font-semibold text-cyan-400 mb-1">
+                      {e.period}
+                    </div>
+                    <div className="font-bold">{e.role}</div>
+                    <div className="text-slate-400 text-sm">{e.org}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -590,6 +796,18 @@ export default function Portfolio() {
                       : 'border-white/10 bg-white/5'
                   }`}
                 >
+                  {p.cover && (
+                    <img
+                      src={p.cover}
+                      alt={p.coverAlt}
+                      loading="lazy"
+                      className={
+                        p.coverContain
+                          ? 'w-full h-auto border-b border-white/10'
+                          : 'w-full aspect-[16/8] object-cover object-top border-b border-white/10'
+                      }
+                    />
+                  )}
                   <div className="p-6 md:p-8">
                     <div className="flex flex-wrap items-start justify-between gap-4 mb-3">
                       <div>
@@ -674,6 +892,23 @@ export default function Portfolio() {
                             {p.result}
                           </p>
                         </div>
+                        {p.gallery && (
+                          <div className="grid sm:grid-cols-3 gap-4 pt-2">
+                            {p.gallery.map((g) => (
+                              <figure key={g.src}>
+                                <img
+                                  src={g.src}
+                                  alt={g.alt}
+                                  loading="lazy"
+                                  className="w-full rounded-lg border border-white/10"
+                                />
+                                <figcaption className="text-xs text-slate-400 mt-1.5">
+                                  {g.caption}
+                                </figcaption>
+                              </figure>
+                            ))}
+                          </div>
+                        )}
                       </div>
                     )}
                   </div>
@@ -705,15 +940,15 @@ export default function Portfolio() {
                 <div className="p-2.5 rounded-lg bg-gradient-to-br from-fuchsia-500 to-purple-500">
                   <Phone size={18} />
                 </div>
-                <span className="text-slate-300">+229 46 75 55 74</span>
+                <a href="tel:+2290146755574" className="text-slate-300 hover:text-white transition">+229 01 46 75 55 74</a>
               </div>
               <div className="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10">
                 <div className="p-2.5 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-500">
                   <Mail size={18} />
                 </div>
-                <span className="text-slate-300">
+                <a href="mailto:walidhamadouyanni@gmail.com" className="text-slate-300 hover:text-white transition">
                   walidhamadouyanni@gmail.com
-                </span>
+                </a>
               </div>
               <div className="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10">
                 <div className="p-2.5 rounded-lg bg-gradient-to-br from-orange-500 to-amber-500">
@@ -770,6 +1005,7 @@ export default function Portfolio() {
                 <Send size={16} />
                 {t.contact.send}
               </button>
+              <p className="text-xs text-slate-500 text-center">{t.contact.note}</p>
             </div>
           </div>
         </div>

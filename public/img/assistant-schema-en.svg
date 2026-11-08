@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" role="img" aria-label="User question">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#94a3b8"/></marker></defs>
+<rect width="1200" height="340" rx="18" fill="#0b1120"/>
+<rect x="50" y="92" width="180" height="146" rx="14" fill="#111827" stroke="#d946ef" stroke-width="2"/>
+<text x="140.0" y="124" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" fill="#d946ef">1</text>
+<text x="140.0" y="154" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#f8fafc">Documents</text>
+<text x="140.0" y="178" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="13.5" fill="#94a3b8">PDF, HTML, text</text>
+<line x1="236" y1="165" x2="272" y2="165" stroke="#94a3b8" stroke-width="2" marker-end="url(#a)"/>
+<rect x="280" y="92" width="180" height="146" rx="14" fill="#111827" stroke="#a855f7" stroke-width="2"/>
+<text x="370.0" y="124" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" fill="#a855f7">2</text>
+<text x="370.0" y="154" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#f8fafc">Splitting</text>
+<text x="370.0" y="178" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="13.5" fill="#94a3b8">passages of about</text>
+<text x="370.0" y="197" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="13.5" fill="#94a3b8">120 words</text>
+<line x1="466" y1="165" x2="502" y2="165" stroke="#94a3b8" stroke-width="2" marker-end="url(#a)"/>
+<rect x="510" y="92" width="180" height="146" rx="14" fill="#111827" stroke="#6366f1" stroke-width="2"/>
+<text x="600.0" y="124" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" fill="#6366f1">3</text>
+<text x="600.0" y="154" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#f8fafc">Representation</text>
+<text x="600.0" y="178" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="13.5" fill="#94a3b8">TF-IDF vectors</text>
+<line x1="696" y1="165" x2="732" y2="165" stroke="#94a3b8" stroke-width="2" marker-end="url(#a)"/>
+<rect x="740" y="92" width="180" height="146" rx="14" fill="#111827" stroke="#0ea5e9" stroke-width="2"/>
+<text x="830.0" y="124" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" fill="#0ea5e9">4</text>
+<text x="830.0" y="154" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#f8fafc">Comparison</text>
+<text x="830.0" y="178" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="13.5" fill="#94a3b8">cosine similarity</text>
+<text x="830.0" y="197" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="13.5" fill="#94a3b8">with the question</text>
+<line x1="926" y1="165" x2="962" y2="165" stroke="#94a3b8" stroke-width="2" marker-end="url(#a)"/>
+<rect x="970" y="92" width="180" height="146" rx="14" fill="#111827" stroke="#06b6d4" stroke-width="2"/>
+<text x="1060.0" y="124" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" fill="#06b6d4">5</text>
+<text x="1060.0" y="154" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#f8fafc">Result</text>
+<text x="1060.0" y="178" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="13.5" fill="#94a3b8">ranked passages</text>
+<text x="1060.0" y="197" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="13.5" fill="#94a3b8">with their source</text>
+<text x="1060.0" y="216" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="13.5" fill="#94a3b8">(file, page)</text>
+<rect x="730" y="20" width="200" height="44" rx="12" fill="#1e1b4b" stroke="#a855f7" stroke-width="1.5"/>
+<text x="830.0" y="48" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="15" fill="#e9d5ff">User question</text>
+<line x1="830.0" y1="66" x2="830.0" y2="88" stroke="#94a3b8" stroke-width="2" marker-end="url(#a)"/>
+<text x="600.0" y="290" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="15" fill="#94a3b8">If no passage is close enough: "nothing relevant found"</text>
+</svg>
